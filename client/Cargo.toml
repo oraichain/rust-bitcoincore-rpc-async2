@@ -1,33 +1,33 @@
 [package]
-name = "bitcoincore-rpc-async2"
-version = "4.0.2"
 authors = [
-    "Jeremy Rubin <j@rubin.io>",
-    "Steven Roose <steven@stevenroose.org>",
-    "Jean Pierre Dudey <jeandudey@hotmail.com>",
-    "Dawid Ciężarkiewicz <dpc@dpc.pw>"
+  "Jeremy Rubin <j@rubin.io>",
+  "Steven Roose <steven@stevenroose.org>",
+  "Jean Pierre Dudey <jeandudey@hotmail.com>",
+  "Dawid Ciężarkiewicz <dpc@dpc.pw>",
 ]
-edition="2018"
-license = "CC0-1.0"
-homepage = "https://github.com/jeremyrubin/rust-bitcoincore-rpc-async/"
-repository = "https://github.com/jeremyrubin/rust-bitcoincore-rpc-async/"
 description = "RPC client library for the Bitcoin Core JSON-RPC API."
-keywords = [ "crypto", "bitcoin", "bitcoin-core", "rpc", "asynchronous" ]
+edition = "2018"
+homepage = "https://github.com/jeremyrubin/rust-bitcoincore-rpc-async/"
+keywords = ["crypto", "bitcoin", "bitcoin-core", "rpc", "asynchronous"]
+license = "CC0-1.0"
+name = "bitcoincore-rpc-async2"
 readme = "README.md"
+repository = "https://github.com/jeremyrubin/rust-bitcoincore-rpc-async/"
+version = "4.0.2"
 
 [lib]
 name = "bitcoincore_rpc_async"
 path = "src/lib.rs"
 
 [dependencies]
-bitcoincore-rpc-json = "0.16.0"
 async-trait = "0.1.42"
-log = "0.4.5"
+bitcoincore-rpc-json = {git = "https://github.com/oraichain/rust-bitcoincore-rpc.git", rev = "09d159c"}
 jsonrpc-async = "2.0.2"
+log = "0.4.5"
 
 # Used for deserialization of JSON.
 serde = "1"
 serde_json = "1.0.61"
 
 [dev-dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = {version = "1", features = ["full"]}
