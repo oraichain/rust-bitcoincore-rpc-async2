@@ -21,7 +21,7 @@ path = "src/lib.rs"
 
 [dependencies]
 async-trait = "0.1.42"
-bitcoincore-rpc-json = {git = "https://github.com/oraichain/rust-bitcoincore-rpc.git", rev = "09d159c"}
+bitcoincore-rpc-json = {git = "https://github.com/oraichain/rust-bitcoincore-rpc.git", rev = "c58eeec"}
 jsonrpc-async = "2.0.2"
 log = "0.4.5"
 
